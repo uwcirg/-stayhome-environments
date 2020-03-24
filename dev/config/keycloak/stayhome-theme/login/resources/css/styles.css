@@ -1,0 +1,180 @@
+.login-pf-page {
+    padding: 24px;
+    margin: 0;
+    background: #4B2E83;
+    background-image: linear-gradient(to bottom, #5835BD, #5533B3, #4C2E88);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #323232;
+    height: 100vh;
+    overflow: auto;
+    font-size: 16px;
+}
+.login-pf-page a {
+    font-size: 15px;
+    color: #493b63;
+    text-decoration: underline;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+.login-pf-page a:hover {
+    color: #1f103a;
+}
+#kc-form-options a {
+    text-decoration: none;
+}
+.login-pf-page .alert-error {
+    background-color: #ffffff;
+    border-color: #cc0000;
+    color: #cc0000;
+}
+
+.login-pf-page .form-group label {
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: #777;
+}
+.login-pf-page h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+@media (min-width: 768px) {
+    .login-pf-page .login-pf-page-header {
+        margin-bottom: 24px;
+    }
+}
+.login-pf-page #kc-page-title {
+    font-weight: 900;
+    position: relative;
+    padding-bottom: 12px;
+}
+.login-pf-page #kc-page-title:before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 20%;
+    left: 40%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+}
+.login-pf-page #kc-header {
+    padding: 16px;
+    background: transparent;
+    color: #FFF !important;
+    height: 92px;
+    font-weight: 600 !important;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.login-pf-page #kc-header-wrapper {
+    position: relative;
+    padding: 24px 10px 24px;
+    width: 320px;
+    max-width: 100%;
+    margin: auto;
+    left: 32.5px;
+    letter-spacing: 0.1rem;
+}
+.login-pf-page #kc-header-wrapper:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2.5%;
+    left: 0;
+    height: 65px;
+    width: 65px;
+    background-image: url(../img/stayhome-logo.png);
+    background-repeat: no-repeat;
+    padding: 32px 10px 32px;
+    background-size: 65px 65px;
+}
+@media (max-width: 767px) {
+    .login-pf-page #kc-header {
+        text-align: center;
+    }
+    .login-pf-page #kc-header-wrapper {
+        color: #FFF;
+        font-size: 26px;
+        padding: 24px 10px 24px;
+        width: 320px;
+    }
+    .login-pf-page #kc-header-wrapper:before {
+        top: 10%;
+        height: 55px;
+        width: 55px;
+        background-size: 55px 55px;
+    }
+    .login-pf-page .card-pf {
+        padding-top: 20px;
+    }
+}
+
+.login-pf-page div.kc-logo-text span {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 35px;
+    color: #323232;
+}
+.login-pf-page .btn,
+.login-pf-page .btn-primary,
+.login-pf-page button {
+    border-radius: 3.75em !important;
+    background-image: none !important;
+    background-color: transparent !important;
+    color: #4B2E83 !important;
+    text-transform: uppercase;
+    border: 2px solid #4B2E83 !important;
+}
+.login-pf-page .btn:hover {
+    background-color: #4B2E83 !important;
+    color: #FFF !important;
+}
+.login-pf-page .btn-primary {
+    font-size: 1.1em;
+    padding: 8px;
+}
+#kc-accept, #kc-decline {
+    font-size: 14px;
+    padding: 8px;
+}
+.login-pf-page .btn-primary:focus {
+    outline: none;
+}
+.login-pf-page .login-pf-header h1 {
+    font-weight: 900;
+    font-size: 22px;
+}
+@media (min-width: 768px) {
+    .login-pf-page .login-pf-header h1 {
+        font-size: 24px;
+    }
+}
+.login-pf-page .form-control {
+    height: 40px;
+    outline: none;
+}
+.login-pf-page input.form-control  {
+    font-size: 16px;
+}
+.login-pf-page .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #524e58;
+}
+.login-pf-page #kc-info-wrapper {
+    font-size: 15px;
+}
+.login-pf-page .card-pf {
+    box-shadow: 0 2px 4px -1px #777;
+    padding: 20px 20px 48px 20px;
+}
+.login-pf-page .card-pf p {
+    color: #2b2d2f;
+}
+@media (min-width: 768px) {
+.login-pf-page .card-pf {
+    padding: 20px 40px 48px 40px;
+}
+}
+.login-pf-page .kc-form a {
+      color: #4B2E83 !important;
+}

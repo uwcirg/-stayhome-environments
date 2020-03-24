@@ -1,0 +1,7 @@
+{
+  "fhirBaseUrl": "https://fhir.local.stayhome.app:4400/fhir",
+  "appRootUrl": "https://client.local.stayhome.app:4400",
+  "issuerUrl": "https://keycloak.local.stayhome.app:4400/auth/realms/Stayhome",
+  "clientId": "stayhome_openid_client",
+  "clientSecret": "92e9861c-a2f3-40dd-8872-e2ee57a55afe"
+}

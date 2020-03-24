@@ -1,0 +1,639 @@
+{
+  "resourceType": "Bundle",
+  "id": "stayhome-data",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "1058",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-24T07:13:15.361+00:00"
+        },
+        "status": "active",
+        "intent": "plan",
+        "description": "Monitor symptoms",
+        "subject": {
+          "reference": "Patient/23"
+        },
+        "period": {
+          "start": "2020-03-01",
+          "end": "2020-12-31"
+        },
+        "activity": [
+          {
+            "detail": {
+              "instantiatesCanonical": ["Questionnaire/204"],
+              "reasonReference": [
+                {
+                  "reference": "DocumentReference/286"
+                },
+                {
+                  "reference": "DocumentReference/275"
+                },
+                {
+                  "reference": "DocumentReference/278"
+                }
+              ],
+              "status": "scheduled",
+              "doNotPerform": false,
+              "scheduledTiming": {
+                "repeat": {
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              },
+              "description": "Questionnaire"
+            }
+          },
+          {
+            "detail": {
+              "instantiatesCanonical": ["Questionnaire/1057"],
+              "status": "scheduled",
+              "doNotPerform": false,
+              "description": "Exposure questionnaire"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/1058"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "275",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-18T18:13:38.856+00:00"
+        },
+        "status": "current",
+        "description": "Seattle Mayor's Office Community Resources",
+        "content": [
+          {
+            "attachment": {
+              "url": "http://www.seattle.gov/mayor/covid-19"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/275"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "278",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2020-03-18T23:49:51.243+00:00"
+        },
+        "status": "current",
+        "description": "Preparing for Social Distancing",
+        "content": [
+          {
+            "attachment": {
+              "url": "https://www.washington.edu/news/2020/03/05/the-food-you-need-uw-expert-on-preparing-for-an-extended-home-stay/",
+              "title": "Foods to stock for an extended home stay"
+            }
+          },
+          {
+            "attachment": {
+              "url": "https://www.spl.org/",
+              "title": "Seattle Public Library Online Media"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/278"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "286",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-18T23:43:21.517+00:00"
+        },
+        "status": "current",
+        "description": "COVID-19 Updates",
+        "content": [
+          {
+            "attachment": {
+              "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+              "title": "World Health Organization"
+            }
+          },
+          {
+            "attachment": {
+              "url": "https://www.cdc.gov/coronavirus/2019-ncov/about/index.html",
+              "title": "Center for Disease Control"
+            }
+          },
+          {
+            "attachment": {
+              "url": "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx",
+              "title": "King County Public Health"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/286"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "204",
+        "meta": {
+          "versionId": "14",
+          "lastUpdated": "2020-03-24T18:19:56.330+00:00",
+          "profile": [
+            "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+          ]
+        },
+        "name": "Symptom Assessment",
+        "title": "Symptom Assessment",
+        "status": "active",
+        "item": [
+          {
+            "linkId": "/70442-9",
+            "code": [
+              {
+                "system": "http://loinc.org",
+                "code": "70442-9",
+                "display": "I have been coughing"
+              }
+            ],
+            "text": "I have been coughing",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "code": "LA6568-5",
+                  "display": "Not at all"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "code": "LA13909-9",
+                  "display": "Somewhat"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 4
+                  }
+                ],
+                "valueCoding": {
+                  "code": "LA13914-9",
+                  "display": "Very much"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/70305-8",
+            "code": [
+              {
+                "system": "http://loinc.org",
+                "code": "70305-8",
+                "display": "I have been short of breath"
+              }
+            ],
+            "text": "I have been short of breath",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "code": "LA6568-5",
+                  "display": "Not at all"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "code": "LA13909-9",
+                  "display": "Somewhat"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 4
+                  }
+                ],
+                "valueCoding": {
+                  "code": "LA13914-9",
+                  "display": "Very much"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/70421-3",
+            "code": [
+              {
+                "system": "http://loinc.org",
+                "code": "70421-3",
+                "display": "I have had fevers (episodes of high body temperature)"
+              }
+            ],
+            "text": "I have had fevers (episodes of high body temperature)",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "code": "LA6568-5",
+                  "display": "Not at all"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "code": "LA13909-9",
+                  "display": "Somewhat"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 4
+                  }
+                ],
+                "valueCoding": {
+                  "code": "LA13914-9",
+                  "display": "Very much"
+                }
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                "valueCoding": {
+                  "display": "[degF]"
+                }
+              }
+            ],
+            "linkId": "/8310-5",
+            "code": [
+              {
+                "system": "http://loinc.org",
+                "code": "8310-5",
+                "display": "Temperature"
+              }
+            ],
+            "text": "Temperature if taken by thermometer",
+            "type": "decimal",
+            "required": false
+          },
+          {
+            "linkId": "/exposure_info",
+            "type": "display",
+            "required": false,
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/exposure_info-help",
+                "text": "If you have had a possible or known exposure to a person infected with COVID-19, or if you have traveled within the last two weeks, please enter that information in “enter possible exposure or travel”.",
+                "type": "display"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Questionnaire/204"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "1057",
+        "meta": {
+          "versionId": "7",
+          "lastUpdated": "2020-03-24T17:12:40.723+00:00",
+          "profile": [
+            "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+          ]
+        },
+        "title": "Enter travel or possible exposure",
+        "status": "active",
+        "item": [
+          {
+            "linkId": "/when",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "when",
+                "display": "When"
+              }
+            ],
+            "text": "When",
+            "type": "display",
+            "required": false,
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/when-help",
+                "text": "Enter start date (and optionally, time) and end date (and optionally, time) if relevant. Then, fill in the applicable section(s) below.",
+                "type": "display"
+              }
+            ]
+          },
+          {
+            "linkId": "/date",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "date",
+                "display": "Start date (and time)"
+              }
+            ],
+            "text": "Start date (and time)",
+            "type": "dateTime",
+            "required": false
+          },
+          {
+            "linkId": "/end_date",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "end_date",
+                "display": "End date (and time)"
+              }
+            ],
+            "text": "End date (and time)",
+            "type": "dateTime",
+            "required": false
+          },
+          {
+            "linkId": "/exposure",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "exposure",
+                "display": "Record exposure"
+              }
+            ],
+            "text": "Record exposure",
+            "type": "display",
+            "required": false
+          },
+          {
+            "linkId": "/what_happened",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "what_happened",
+                "display": "What happened?"
+              }
+            ],
+            "text": "What happened?",
+            "type": "string",
+            "required": false,
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/what_happened-help",
+                "text": "Someone on the bus sneezed on you, you visited with someone later determined to be ill, etc.",
+                "type": "display"
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "linkId": "/exposure_confidence",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "exposure_confidence",
+                "display": "How confident are you that you were exposed?"
+              }
+            ],
+            "text": "How confident are you that you were exposed?",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "possible",
+                  "display": "Possible"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "likely",
+                  "display": "Likely"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "known",
+                  "display": "Known"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/travel",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "travel",
+                "display": "Record travel"
+              }
+            ],
+            "text": "Record travel",
+            "type": "display",
+            "required": false
+          },
+          {
+            "linkId": "/travel/travel_destination_free_text",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "travel_destination_free_text",
+                "display": "Free text travel destination"
+              }
+            ],
+            "text": "Location",
+            "type": "string",
+            "required": false,
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/travel/travel_destination_free_text-help",
+                "text": "What location(s) did you visit? Include any details such as city, state, country, zip or postal code, ...",
+                "type": "display"
+              }
+            ]
+          },
+          {
+            "linkId": "/any_known_exposure",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "any_known_exposure",
+                "display": "Any known exposure to individuals with coughing, shortness of breath, or fever when traveling? If yes, describe."
+              }
+            ],
+            "text": "Any known exposure to individuals with coughing, shortness of breath, or fever when traveling? If yes, describe.",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Questionnaire/1057"
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+version: "3.7"
+services:
+  stayhome-ingress:
+    image: nginx:1.17.9-alpine
+    ports:
+      - "${INGRESS_PORT:-4400}:443"
+    volumes:
+      - "./config/certs:/stayhome-certs"
+      - "./config/ingress:/etc/nginx/conf.d"
+    networks:
+      - stayhome-network
+    depends_on:
+      - stayhome-keycloak
+      - stayhome-client
+
+  stayhome-client:
+    image: psbrandt/map-app-client:dev
+    volumes:
+      - "./config/client/app_settings.json:/usr/share/nginx/html/assets/assets/cfg/app_settings.json"
+    networks:
+      - stayhome-network
+
+  stayhome-keycloak:
+    image: jboss/keycloak:9.0.0
+    restart: unless-stopped
+    command:
+      [
+        "-b",
+        "0.0.0.0",
+        "-Dkeycloak.migration.action=import",
+        "-Dkeycloak.migration.provider=singleFile",
+        "-Dkeycloak.profile.feature.upload_scripts=enabled",
+        "-Dkeycloak.migration.file=/tmp/Stayhome.realm.json",
+        "-Dkeycloak.migration.strategy=IGNORE_EXISTING",
+      ]
+    environment:
+      KEYCLOAK_HOSTNAME: "keycloak.local.stayhome.app:4400"
+      PROXY_ADDRESS_FORWARDING: "true"
+      DB_VENDOR: "postgres"
+      DB_ADDR: "stayhome-db"
+      DB_PORT: 5432
+      DB_DATABASE: "stayhome_keycloak"
+      DB_USER: "postgres"
+      DB_PASSWORD: "postgres"
+    networks:
+      - stayhome-network
+    volumes:
+      - "./config/keycloak/Stayhome.realm.json:/tmp/Stayhome.realm.json"
+      - "./config/keycloak/stayhome-theme:/opt/jboss/keycloak/themes/stayhome"
+    depends_on:
+      - stayhome-db
+
+  stayhome-db:
+    image: postgres:11-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    volumes:
+      - "stayhome-data:/var/lib/postgresql/data"
+      - "./config/db:/docker-entrypoint-initdb.d"
+    networks:
+      - stayhome-network
+
+  stayhome-fhir:
+    image: uwcirg/hapi-fhir-oauth2-starter
+    environment:
+      JAVA_OPTIONS: "-Dhapi.properties=/stayhome/hapi.properties"
+    networks:
+      - stayhome-network
+    volumes:
+      - "./config/fhir/hapi.properties:/stayhome/hapi.properties"
+    depends_on:
+      - stayhome-db
+
+volumes:
+  stayhome-data:
+
+networks:
+  stayhome-network:
