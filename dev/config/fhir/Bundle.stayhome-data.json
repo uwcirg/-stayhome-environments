@@ -660,7 +660,7 @@
         "priority": "routine",
         "payload": [
           {
-            "contentString": "Welcome to StayHome! We're glad you're here."
+            "contentString": "Welcome to StayHome! We're glad you're here.\n- Keep an eye on this space for messages\n- Dismiss them with the “Dismiss” button\n- Find new and old messages in the Menu under Communications"
           }
         ]
       },
