@@ -169,6 +169,33 @@
         "status": "active",
         "item": [
           {
+            "linkId": "/info",
+            "type": "display",
+            "required": false,
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/info-help",
+                "text": "All questions are optional.",
+                "type": "display"
+              }
+            ]
+          },
+          {
             "linkId": "/70442-9",
             "code": [
               {
@@ -343,6 +370,19 @@
             "required": false
           },
           {
+            "linkId": "/comment",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "comment",
+                "display": "Comments"
+              }
+            ],
+            "text": "Comments",
+            "type": "string",
+            "required": false
+          },
+          {
             "linkId": "/exposure_info",
             "type": "display",
             "required": false,
@@ -421,7 +461,7 @@
                   }
                 ],
                 "linkId": "/when-help",
-                "text": "Enter start date and, if relevant, end date. Then, fill in the applicable section(s) below. All fields are optional.",
+                "text": "Enter start date and, if relevant, end date. Then, fill in the applicable section(s) below.\nAll questions are optional.",
                 "type": "display"
               }
             ]
