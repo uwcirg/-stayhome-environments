@@ -26,6 +26,12 @@
               ],
               "reasonReference": [
                 {
+                  "reference": "DocumentReference/1307"
+                },
+                {
+                  "reference": "DocumentReference/1308"
+                },
+                {
                   "reference": "DocumentReference/286"
                 },
                 {
@@ -85,6 +91,44 @@
       "request": {
         "method": "PUT",
         "url": "DocumentReference/275"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "1307",
+        "status": "current",
+        "description": "StayHome Resources Page",
+        "content": [
+          {
+            "attachment": {
+              "url": "https://tiny.cc/covidlinks"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/1307"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "1308",
+        "status": "current",
+        "description": "Contact Us",
+        "content": [
+          {
+            "attachment": {
+              "url": "mailto:help@stayhome-app.on.spiceworks.com"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/1308"
       }
     },
     {
@@ -293,6 +337,60 @@
                 "valueCoding": {
                   "code": "LA13914-9",
                   "display": "Very much"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/sense_of_smell",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "sense_of_smell",
+                "display": "My sense of smell or taste is"
+              }
+            ],
+            "text": "My sense of smell or taste is",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "normal",
+                  "display": "Normal"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "decreased",
+                  "display": "Decreased"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "completely_gone",
+                  "display": "Completely gone"
                 }
               }
             ]
