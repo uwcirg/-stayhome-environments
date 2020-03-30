@@ -29,6 +29,9 @@
               ],
               "reasonReference": [
                 {
+                  "reference": "DocumentReference/1307"
+                },
+                {
                   "reference": "DocumentReference/286"
                 },
                 {
@@ -88,6 +91,25 @@
       "request": {
         "method": "PUT",
         "url": "DocumentReference/275"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "1307",
+        "status": "current",
+        "description": "StayHome Resources Page",
+        "content": [
+          {
+            "attachment": {
+              "url": "https://tiny.cc/covidlinks"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/1307"
       }
     },
     {
