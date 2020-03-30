@@ -32,6 +32,9 @@
                   "reference": "DocumentReference/1307"
                 },
                 {
+                  "reference": "DocumentReference/1308"
+                },
+                {
                   "reference": "DocumentReference/286"
                 },
                 {
@@ -110,6 +113,25 @@
       "request": {
         "method": "PUT",
         "url": "DocumentReference/1307"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "1308",
+        "status": "current",
+        "description": "Contact Us",
+        "content": [
+          {
+            "attachment": {
+              "url": "mailto:help@stayhome-app.on.spiceworks.com"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/1308"
       }
     },
     {
