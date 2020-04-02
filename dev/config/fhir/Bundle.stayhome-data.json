@@ -248,7 +248,7 @@
                 "display": "I have been coughing"
               }
             ],
-            "text": "I have been coughing",
+            "text": "I recently started coughing",
             "type": "choice",
             "required": false,
             "answerOption": [
@@ -299,7 +299,7 @@
                 "display": "I have been short of breath"
               }
             ],
-            "text": "I have been short of breath",
+            "text": "I recently have been wheezing or short of breath",
             "type": "choice",
             "required": false,
             "answerOption": [
@@ -404,7 +404,7 @@
                 "display": "I have had fevers (episodes of high body temperature)"
               }
             ],
-            "text": "I have had fevers (episodes of high body temperature)",
+            "text": "I have felt feverish (had episodes of high body temperature)",
             "type": "choice",
             "required": false,
             "answerOption": [
