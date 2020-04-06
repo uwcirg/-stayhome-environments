@@ -989,7 +989,7 @@
                   }
                 ],
                 "linkId": "/test_result_if_known-help",
-                "text": "Answer positive if you have the virus, and negative if you do not have the virus. You can also indicate if your test was inconclusive (which is uncommon), or if you are still awaiting the test result.",
+                "text": "Better would be to say Answer \"positive\" if your test shows that you have, or had, the virus. Answer \"negative\" if your test shows that you do/did not have the virus. You can also indicate if your test was inconclusive (which is uncommon), or if you are still awaiting the test result.",
                 "type": "display"
               }
             ]
