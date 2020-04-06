@@ -649,21 +649,6 @@
             ]
           },
           {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "drop-down",
-                      "display": "Drop down"
-                    }
-                  ],
-                  "text": "Drop down"
-                }
-              }
-            ],
             "linkId": "/exposure_confidence",
             "code": [
               {
@@ -887,21 +872,64 @@
             ]
           },
           {
-            "extension": [
+            "linkId": "/type_of_test",
+            "code": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "drop-down",
-                      "display": "Drop down"
-                    }
-                  ],
-                  "text": "Drop down"
+                "system": "Custom",
+                "code": "type_of_test",
+                "display": "Type of test"
+              }
+            ],
+            "text": "Type of test",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "nasal_swab",
+                  "display": "Nasal swab"
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "blood_test",
+                  "display": "Blood test"
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "other",
+                  "display": "Other (see comments)"
                 }
               }
             ],
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/type_of_test-help",
+                "text": "The nasal swab test is used to show whether you currently are infected with the virus (antigen test) . The blood (antibody) test is used to show if you were previously infected. Neither test is completely accurate, and they measure different things.",
+                "type": "display"
+              }
+            ]
+          },
+          {
             "linkId": "/test_result_if_known",
             "code": [
               {
@@ -965,6 +993,19 @@
                 "type": "display"
               }
             ]
+          },
+          {
+            "linkId": "/test_result_comments",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "comments",
+                "display": "Comments"
+              }
+            ],
+            "text": "Comments",
+            "type": "string",
+            "required": false
           }
         ]
       },
