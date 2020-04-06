@@ -62,6 +62,16 @@
               "doNotPerform": false,
               "description": "Exposure questionnaire"
             }
+          },
+          {
+            "detail": {
+              "instantiatesCanonical": [
+                "Questionnaire/1376"
+              ],
+              "status": "scheduled",
+              "doNotPerform": false,
+              "description": "COVID-19 testing questionnaire"
+            }
           }
         ]
       },
@@ -639,21 +649,6 @@
             ]
           },
           {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "drop-down",
-                      "display": "Drop down"
-                    }
-                  ],
-                  "text": "Drop down"
-                }
-              }
-            ],
             "linkId": "/exposure_confidence",
             "code": [
               {
@@ -773,6 +768,250 @@
       "request": {
         "method": "PUT",
         "url": "Questionnaire/1057"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "1376",
+        "title": "COVID-19 testing",
+        "status": "active",
+        "item": [
+          {
+            "linkId": "/form_info",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "form_info"
+              }
+            ],
+            "type": "display",
+            "required": false,
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/form_info-help",
+                "text": "You can fill this out each time you are tested, and each time you receive a result. If you are sharing your information, having the result may be important when combined with your symptoms and other information.",
+                "type": "display"
+              }
+            ]
+          },
+          {
+            "linkId": "/testing_information",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "testing_information",
+                "display": "I was tested:"
+              }
+            ],
+            "text": "I was tested:",
+            "type": "display",
+            "required": false
+          },
+          {
+            "linkId": "/testing_date",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "testing_date",
+                "display": "When"
+              }
+            ],
+            "text": "When",
+            "type": "date",
+            "required": false
+          },
+          {
+            "linkId": "/clinic_or_test_site_name",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "clinic_or_test_site_name",
+                "display": "Where"
+              }
+            ],
+            "text": "Where",
+            "type": "string",
+            "required": false,
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/clinic_or_test_site_name-help",
+                "text": "Clinic/site, city/location",
+                "type": "display"
+              }
+            ]
+          },
+          {
+            "linkId": "/type_of_test",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "type_of_test",
+                "display": "Type of test"
+              }
+            ],
+            "text": "Type of test",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "nasal_swab",
+                  "display": "Nasal swab"
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "blood_test",
+                  "display": "Blood test"
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "other",
+                  "display": "Other (see comments)"
+                }
+              }
+            ],
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/type_of_test-help",
+                "text": "The nasal swab test is used to show whether you currently are infected with the virus (antigen test) . The blood (antibody) test is used to show if you were previously infected. Neither test is completely accurate, and they measure different things.",
+                "type": "display"
+              }
+            ]
+          },
+          {
+            "linkId": "/test_result_if_known",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "test_result_if_known",
+                "display": "My result was:"
+              }
+            ],
+            "text": "My result was:",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "positive",
+                  "display": "Positive"
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "negative",
+                  "display": "Negative"
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "inconclusive",
+                  "display": "Inconclusive"
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "pending",
+                  "display": "Pending"
+                }
+              }
+            ],
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/test_result_if_known-help",
+                "text": "Answer \"positive\" if your test shows that you have, or had, the virus. Answer \"negative\" if your test shows that you do/did not have the virus. You can also indicate if your test was inconclusive (which is uncommon), or if you are still awaiting the test result.",
+                "type": "display"
+              }
+            ]
+          },
+          {
+            "linkId": "/test_result_comments",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "comments",
+                "display": "Comments"
+              }
+            ],
+            "text": "Comments",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Questionnaire/1376"
       }
     },
     {
