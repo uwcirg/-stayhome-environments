@@ -540,6 +540,33 @@
         "status": "active",
         "item": [
           {
+            "linkId": "/info",
+            "type": "display",
+            "required": false,
+            "item": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://hl7.org/fhir/questionnaire-item-control",
+                          "code": "help",
+                          "display": "Help-Button"
+                        }
+                      ],
+                      "text": "Help-Button"
+                    }
+                  }
+                ],
+                "linkId": "/info-help",
+                "text": "All questions are optional.",
+                "type": "display"
+              }
+            ]
+          },
+          {
             "linkId": "/when",
             "code": [
               {
@@ -569,7 +596,7 @@
                   }
                 ],
                 "linkId": "/when-help",
-                "text": "Enter start date and, if relevant, end date. Then, fill in the applicable section(s) below.\nAll questions are optional.",
+                "text": "Enter start date and, if relevant, end date. Then, fill in the applicable section(s) below.",
                 "type": "display"
               }
             ]
