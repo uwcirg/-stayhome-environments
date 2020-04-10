@@ -72,6 +72,16 @@
               "doNotPerform": false,
               "description": "COVID-19 testing questionnaire"
             }
+          },
+          {
+            "detail": {
+              "instantiatesCanonical": [
+                "Questionnaire/1442"
+              ],
+              "status": "scheduled",
+              "doNotPerform": false,
+              "description": "Pregnancy questionnaire"
+            }
           }
         ]
       },
