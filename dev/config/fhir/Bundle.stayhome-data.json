@@ -1054,7 +1054,7 @@
     {
       "resource": {
         "status": "active",
-        "title": "Identify at-risk conditions",
+        "title": "At-risk conditions",
         "resourceType": "Questionnaire",
         "meta": {
           "profile": [
@@ -1384,12 +1384,12 @@
             "code": [
               {
                 "code": "are_you_currently_pregnant",
-                "display": "Are you currently pregnant",
+                "display": "Are you currently pregnant?",
                 "system": "Custom"
               }
             ],
             "required": false,
-            "text": "Are you currently pregnant",
+            "text": "Are you currently pregnant?",
             "answerOption": [
               {
                 "valueCoding": {
