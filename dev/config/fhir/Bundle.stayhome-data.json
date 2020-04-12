@@ -72,6 +72,16 @@
               "doNotPerform": false,
               "description": "COVID-19 testing questionnaire"
             }
+          },
+          {
+            "detail": {
+              "instantiatesCanonical": [
+                "Questionnaire/1442"
+              ],
+              "status": "scheduled",
+              "doNotPerform": false,
+              "description": "Pregnancy questionnaire"
+            }
           }
         ]
       },
@@ -1039,6 +1049,524 @@
       "request": {
         "method": "PUT",
         "url": "Questionnaire/1376"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "title": "At-risk conditions",
+        "resourceType": "Questionnaire",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+          ],
+          "tag": [
+            {
+              "display": "lformsVersion: 21.2.1"
+            }
+          ]
+        },
+        "item": [
+          {
+            "linkId": "/form_intro",
+            "type": "display",
+            "code": [
+              {
+                "code": "form_intro",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "item": [
+              {
+                "text": "We’d like to know about conditions that may increase your COVID-19 risk. All questions are optional; you can answer as many or as few as you would like. If you do provide this information it may be useful for public health planning.",
+                "type": "display",
+                "linkId": "/form_info-help",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "text": "Help-Button",
+                      "coding": [
+                        {
+                          "code": "help",
+                          "display": "Help-Button",
+                          "system": "http://hl7.org/fhir/questionnaire-item-control"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "/form_section_healthcare_worker_questions",
+            "type": "display",
+            "code": [
+              {
+                "code": "form_section_healthcare_worker_questions",
+                "display": "Healthcare worker questions",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Healthcare worker questions"
+          },
+          {
+            "linkId": "/are_you_a_healthcare_worker",
+            "type": "choice",
+            "code": [
+              {
+                "code": "are_you_a_healthcare_worker",
+                "display": "Are you a healthcare worker?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Are you a healthcare worker?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/are_you_actively_seeing_patients",
+            "type": "choice",
+            "code": [
+              {
+                "code": "are_you_actively_seeing_patients",
+                "display": "Are you actively seeing patients?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Are you actively seeing patients?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/what_is_your_role",
+            "type": "string",
+            "code": [
+              {
+                "code": "what_is_your_role",
+                "display": "What is your role?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "What is your role?"
+          },
+          {
+            "linkId": "/what_setting_do_you_work_in",
+            "type": "string",
+            "code": [
+              {
+                "code": "what_setting_do_you_work_in",
+                "display": "What setting do you work in?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "What setting do you work in?"
+          },
+          {
+            "linkId": "/form_section_chronic_health_conditions",
+            "type": "display",
+            "code": [
+              {
+                "code": "form_section_chronic_health_conditions",
+                "display": "Chronic health conditions",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Chronic health conditions"
+          },
+          {
+            "linkId": "/do_you_have_any_chronic_health_conditions",
+            "type": "choice",
+            "code": [
+              {
+                "code": "do_you_have_any_chronic_health_conditions",
+                "display": "Do you have any chronic health conditions, such as diabetes, asthma, or high blood pressure?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Do you have any chronic health conditions, such as diabetes, asthma, or high blood pressure?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/would_you_like_to_tell_us_chronic_health_conditions",
+            "type": "choice",
+            "code": [
+              {
+                "code": "would_you_like_to_tell_us_chronic_health_conditions",
+                "display": "Would you like to tell us what chronic health condition(s) you have?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Would you like to tell us what chronic health condition(s) you have?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/what_chronic_condition_do_you_have",
+            "type": "string",
+            "code": [
+              {
+                "code": "what_chronic_condition_do_you_have",
+                "display": "What chronic health condition(s) do you have?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "What chronic health condition(s) do you have?"
+          },
+          {
+            "linkId": "/form_section_immunocompromised_conditions_questions",
+            "type": "display",
+            "code": [
+              {
+                "code": "form_section_immunocompromised_conditions_questions",
+                "display": "Immunocompromised conditions",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Immunocompromised conditions"
+          },
+          {
+            "linkId": "/are_you_at_an_increased_risk_of_getting_an_infection",
+            "type": "choice",
+            "code": [
+              {
+                "code": "are_you_at_an_increased_risk_of_getting_an_infection",
+                "display": "Are you at an increased risk of getting an infection, cold, or fever due to a health condition or medical treatment?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Are you at an increased risk of getting an infection, cold, or fever due to a health condition or medical treatment?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/would_you_like_to_tell_us_immunocompromised_conditions",
+            "type": "choice",
+            "code": [
+              {
+                "code": "would_you_like_to_tell_us_immunocompromised_conditions",
+                "display": "Would you like to tell us what condition or treatment increases your risk for infection, cold, or fever?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Would you like to tell us what condition or treatment increases your risk for infection, cold, or fever?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/what_condition_or_treatment_increases_your_risk",
+            "type": "string",
+            "code": [
+              {
+                "code": "what_condition_or_treatment_increases_your_risk",
+                "display": "What condition or treatment increases your risk for infection, cold, or fever?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "What condition or treatment increases your risk for infection, cold, or fever?"
+          },
+          {
+            "linkId": "/form_section_pregnancy_status",
+            "type": "display",
+            "code": [
+              {
+                "code": "form_section_pregnancy_status",
+                "display": "Pregnancy status / Recent birth",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Pregnancy status / Recent birth"
+          },
+          {
+            "linkId": "/are_you_currently_pregnant",
+            "type": "choice",
+            "code": [
+              {
+                "code": "are_you_currently_pregnant",
+                "display": "Are you currently pregnant?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Are you currently pregnant?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/when_is_your_due_date",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "when_is_your_due_date",
+                "display": "When is your due date?"
+              }
+            ],
+            "text": "When is your due date?",
+            "type": "date",
+            "required": false
+          },
+          {
+            "linkId": "/have_you_recently_given_birth",
+            "type": "choice",
+            "code": [
+              {
+                "code": "have_you_recently_given_birth",
+                "display": "Have you recently given birth?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Have you recently given birth?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/when_did_you_give_birth",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "when_did_you_give_birth",
+                "display": "When did you give birth?"
+              }
+            ],
+            "text": "When did you give birth?",
+            "type": "date",
+            "required": false
+          },
+          {
+            "linkId": "/have_you_had_any_fever_during_or_after_pregnancy",
+            "type": "choice",
+            "code": [
+              {
+                "code": "have_you_had_any_fever_during_or_after_pregnancy",
+                "display": "Have you had any fever, cough, or shortness of breath during your pregnancy or in the first six weeks after giving birth?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Have you had any fever, cough, or shortness of breath during your pregnancy or in the first six weeks after giving birth?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/when_did_you_have_fever",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "when_did_you_have_fever",
+                "display": "When did you have fever, cough, or shortness of breath?"
+              }
+            ],
+            "text": "When did you have fever, cough, or shortness of breath?",
+            "type": "date",
+            "required": false
+          },
+          {
+            "linkId": "/have_you_ever_tested_positive_for_covid19_during_or_after_pregnancy",
+            "type": "choice",
+            "code": [
+              {
+                "code": "have_you_ever_tested_positive_for_covid19_during_or_after_pregnancy",
+                "display": "Have you ever tested positive for coronavirus (COVID-19) during your pregnancy or in the first six weeks after giving birth?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Have you ever tested positive for coronavirus (COVID-19) during your pregnancy or in the first six weeks after giving birth?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "/were_you_admitted_to_the_hospital_bc_covid19_during_or_after_pregnancy",
+            "type": "choice",
+            "code": [
+              {
+                "code": "were_you_admitted_to_the_hospital_bc_covid19_during_or_after_pregnancy",
+                "display": "Were you ever admitted to the hospital because of having coronavirus (COVID-19) during your pregnancy or in the first six weeks after giving birth?",
+                "system": "Custom"
+              }
+            ],
+            "required": false,
+            "text": "Were you ever admitted to the hospital because of having coronavirus (COVID-19) during your pregnancy or in the first six weeks after giving birth?",
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "LA33-6",
+                  "display": "Yes",
+                  "system": "https://loinc.org/"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "LA32-8",
+                  "display": "No",
+                  "system": "https://loinc.org/"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Questionnaire/1442"
       }
     },
     {
