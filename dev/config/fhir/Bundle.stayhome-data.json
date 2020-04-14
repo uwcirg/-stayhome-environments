@@ -24,23 +24,6 @@
               "instantiatesCanonical": [
                 "Questionnaire/204"
               ],
-              "reasonReference": [
-                {
-                  "reference": "DocumentReference/1307"
-                },
-                {
-                  "reference": "DocumentReference/1308"
-                },
-                {
-                  "reference": "DocumentReference/286"
-                },
-                {
-                  "reference": "DocumentReference/275"
-                },
-                {
-                  "reference": "DocumentReference/278"
-                }
-              ],
               "status": "scheduled",
               "doNotPerform": false,
               "scheduledTiming": {
@@ -92,133 +75,6 @@
     },
     {
       "resource": {
-        "resourceType": "DocumentReference",
-        "id": "275",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2020-03-18T18:13:38.856+00:00"
-        },
-        "status": "current",
-        "description": "Seattle Mayor's Office Community Resources",
-        "content": [
-          {
-            "attachment": {
-              "url": "http://www.seattle.gov/mayor/covid-19"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "DocumentReference/275"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "DocumentReference",
-        "id": "1307",
-        "status": "current",
-        "description": "StayHome Resources Page",
-        "content": [
-          {
-            "attachment": {
-              "url": "https://tiny.cc/covidlinks"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "DocumentReference/1307"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "DocumentReference",
-        "id": "1308",
-        "status": "current",
-        "description": "Contact Us",
-        "content": [
-          {
-            "attachment": {
-              "url": "mailto:help@stayhome-app.on.spiceworks.com"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "DocumentReference/1308"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "DocumentReference",
-        "id": "278",
-        "meta": {
-          "versionId": "2",
-          "lastUpdated": "2020-03-18T23:49:51.243+00:00"
-        },
-        "status": "current",
-        "description": "Preparing for Social Distancing",
-        "content": [
-          {
-            "attachment": {
-              "url": "https://www.washington.edu/news/2020/03/05/the-food-you-need-uw-expert-on-preparing-for-an-extended-home-stay/",
-              "title": "Foods to stock for an extended home stay"
-            }
-          },
-          {
-            "attachment": {
-              "url": "https://www.spl.org/",
-              "title": "Seattle Public Library Online Media"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "DocumentReference/278"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "DocumentReference",
-        "id": "286",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2020-03-18T23:43:21.517+00:00"
-        },
-        "status": "current",
-        "description": "COVID-19 Updates",
-        "content": [
-          {
-            "attachment": {
-              "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
-              "title": "World Health Organization"
-            }
-          },
-          {
-            "attachment": {
-              "url": "https://www.cdc.gov/coronavirus/2019-ncov/about/index.html",
-              "title": "Center for Disease Control"
-            }
-          },
-          {
-            "attachment": {
-              "url": "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx",
-              "title": "King County Public Health"
-            }
-          }
-        ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "DocumentReference/286"
-      }
-    },
-    {
-      "resource": {
         "resourceType": "Questionnaire",
         "id": "204",
         "meta": {
@@ -230,6 +86,14 @@
         },
         "name": "Symptom Assessment",
         "title": "Symptom Assessment",
+        "_title": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+              "valueBoolean": true
+            }
+          ]
+        },
         "status": "active",
         "item": [
           {
@@ -255,6 +119,14 @@
                 ],
                 "linkId": "/info-help",
                 "text": "All questions are optional.",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display"
               }
             ]
@@ -269,6 +141,14 @@
               }
             ],
             "text": "I recently started coughing",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "choice",
             "required": false,
             "answerOption": [
@@ -281,7 +161,15 @@
                 ],
                 "valueCoding": {
                   "code": "LA6568-5",
-                  "display": "Not at all"
+                  "display": "Not at all",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
@@ -293,7 +181,15 @@
                 ],
                 "valueCoding": {
                   "code": "LA13909-9",
-                  "display": "Somewhat"
+                  "display": "Somewhat",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
@@ -305,7 +201,15 @@
                 ],
                 "valueCoding": {
                   "code": "LA13914-9",
-                  "display": "Very much"
+                  "display": "Very much",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -320,6 +224,14 @@
               }
             ],
             "text": "I recently have been wheezing or short of breath",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "choice",
             "required": false,
             "answerOption": [
@@ -332,7 +244,15 @@
                 ],
                 "valueCoding": {
                   "code": "LA6568-5",
-                  "display": "Not at all"
+                  "display": "Not at all",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
@@ -344,7 +264,15 @@
                 ],
                 "valueCoding": {
                   "code": "LA13909-9",
-                  "display": "Somewhat"
+                  "display": "Somewhat",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
@@ -356,7 +284,15 @@
                 ],
                 "valueCoding": {
                   "code": "LA13914-9",
-                  "display": "Very much"
+                  "display": "Very much",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -371,6 +307,14 @@
               }
             ],
             "text": "My sense of smell or taste is",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "choice",
             "required": false,
             "answerOption": [
@@ -384,7 +328,15 @@
                 "valueCoding": {
                   "system": "Custom",
                   "code": "normal",
-                  "display": "Normal"
+                  "display": "Normal",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
@@ -397,7 +349,15 @@
                 "valueCoding": {
                   "system": "Custom",
                   "code": "decreased",
-                  "display": "Decreased"
+                  "display": "Decreased",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
@@ -410,7 +370,15 @@
                 "valueCoding": {
                   "system": "Custom",
                   "code": "completely_gone",
-                  "display": "Completely gone"
+                  "display": "Completely gone",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -425,6 +393,14 @@
               }
             ],
             "text": "I have felt feverish (had episodes of high body temperature)",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "choice",
             "required": false,
             "answerOption": [
@@ -437,7 +413,15 @@
                 ],
                 "valueCoding": {
                   "code": "LA6568-5",
-                  "display": "Not at all"
+                  "display": "Not at all",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
@@ -449,7 +433,15 @@
                 ],
                 "valueCoding": {
                   "code": "LA13909-9",
-                  "display": "Somewhat"
+                  "display": "Somewhat",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
@@ -461,7 +453,15 @@
                 ],
                 "valueCoding": {
                   "code": "LA13914-9",
-                  "display": "Very much"
+                  "display": "Very much",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -484,6 +484,14 @@
               }
             ],
             "text": "Temperature if taken by thermometer",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "decimal",
             "required": false
           },
@@ -497,6 +505,14 @@
               }
             ],
             "text": "Comments",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "string",
             "required": false
           },
@@ -523,6 +539,14 @@
                 ],
                 "linkId": "/exposure_info-help",
                 "text": "If you have had a possible or known exposure to a person infected with COVID-19, or if you have traveled within the last two weeks, please enter that information in “enter possible exposure or travel”.",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display"
               }
             ]
@@ -572,6 +596,14 @@
                 ],
                 "linkId": "/info-help",
                 "text": "All questions are optional.",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display"
               }
             ]
@@ -586,6 +618,14 @@
               }
             ],
             "text": "When",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "display",
             "required": false,
             "item": [
@@ -607,6 +647,14 @@
                 ],
                 "linkId": "/when-help",
                 "text": "Enter start date and, if relevant, end date. Then, fill in the applicable section(s) below.",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display"
               }
             ]
@@ -621,6 +669,14 @@
               }
             ],
             "text": "Start date",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "date",
             "required": false
           },
@@ -634,6 +690,14 @@
               }
             ],
             "text": "End date (optional)",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "date",
             "required": false
           },
@@ -647,6 +711,14 @@
               }
             ],
             "text": "Record exposure",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "display",
             "required": false
           },
@@ -660,6 +732,14 @@
               }
             ],
             "text": "What happened?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "string",
             "required": false,
             "item": [
@@ -681,6 +761,14 @@
                 ],
                 "linkId": "/what_happened-help",
                 "text": "Someone on the bus sneezed on you, you visited with someone later determined to be ill, etc.",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display"
               }
             ]
@@ -695,6 +783,14 @@
               }
             ],
             "text": "How confident are you that you were exposed?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "choice",
             "required": false,
             "answerOption": [
@@ -708,7 +804,15 @@
                 "valueCoding": {
                   "system": "Custom",
                   "code": "possible",
-                  "display": "Possible"
+                  "display": "Possible",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
@@ -721,7 +825,15 @@
                 "valueCoding": {
                   "system": "Custom",
                   "code": "likely",
-                  "display": "Likely"
+                  "display": "Likely",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
@@ -734,7 +846,15 @@
                 "valueCoding": {
                   "system": "Custom",
                   "code": "certain",
-                  "display": "Certain"
+                  "display": "Certain",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -749,6 +869,14 @@
               }
             ],
             "text": "Record travel",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "display",
             "required": false
           },
@@ -762,6 +890,14 @@
               }
             ],
             "text": "Location",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "string",
             "required": false,
             "item": [
@@ -783,6 +919,14 @@
                 ],
                 "linkId": "/travel/travel_destination_free_text-help",
                 "text": "What location(s) did you visit? Include any details such as city, state, country, zip or postal code, ...",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display"
               }
             ]
@@ -797,6 +941,14 @@
               }
             ],
             "text": "Any known exposure to individuals with coughing, shortness of breath, or fever when traveling? If yes, describe.",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "string",
             "required": false
           }
@@ -843,6 +995,14 @@
                 ],
                 "linkId": "/form_info-help",
                 "text": "You can fill this out each time you are tested, and each time you receive a result. If you are sharing your information, having the result may be important when combined with your symptoms and other information.",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display"
               }
             ]
@@ -857,6 +1017,14 @@
               }
             ],
             "text": "I was tested:",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "display",
             "required": false
           },
@@ -870,6 +1038,14 @@
               }
             ],
             "text": "When",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "date",
             "required": false
           },
@@ -883,6 +1059,14 @@
               }
             ],
             "text": "Where",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "string",
             "required": false,
             "item": [
@@ -904,6 +1088,14 @@
                 ],
                 "linkId": "/clinic_or_test_site_name-help",
                 "text": "Clinic/site, city/location",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display"
               }
             ]
@@ -918,6 +1110,14 @@
               }
             ],
             "text": "Type of test",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "choice",
             "required": false,
             "answerOption": [
@@ -925,21 +1125,45 @@
                 "valueCoding": {
                   "system": "Custom",
                   "code": "nasal_swab",
-                  "display": "Nasal swab"
+                  "display": "Nasal swab",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "system": "Custom",
                   "code": "blood_test",
-                  "display": "Blood test"
+                  "display": "Blood test",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "system": "Custom",
                   "code": "other",
-                  "display": "Other (see comments)"
+                  "display": "Other (see comments)",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ],
@@ -962,6 +1186,14 @@
                 ],
                 "linkId": "/type_of_test-help",
                 "text": "The nasal swab test is used to show whether you currently are infected with the virus (antigen test) . The blood (antibody) test is used to show if you were previously infected. Neither test is completely accurate, and they measure different things.",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display"
               }
             ]
@@ -976,6 +1208,14 @@
               }
             ],
             "text": "My result was:",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "choice",
             "required": false,
             "answerOption": [
@@ -983,28 +1223,60 @@
                 "valueCoding": {
                   "system": "Custom",
                   "code": "positive",
-                  "display": "Positive"
+                  "display": "Positive",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "system": "Custom",
                   "code": "negative",
-                  "display": "Negative"
+                  "display": "Negative",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "system": "Custom",
                   "code": "inconclusive",
-                  "display": "Inconclusive"
+                  "display": "Inconclusive",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "system": "Custom",
                   "code": "pending",
-                  "display": "Pending"
+                  "display": "Pending",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ],
@@ -1027,6 +1299,14 @@
                 ],
                 "linkId": "/test_result_if_known-help",
                 "text": "Answer \"positive\" if your test shows that you have, or had, the virus. Answer \"negative\" if your test shows that you do/did not have the virus. You can also indicate if your test was inconclusive (which is uncommon), or if you are still awaiting the test result.",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display"
               }
             ]
@@ -1041,6 +1321,14 @@
               }
             ],
             "text": "Comments",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "string",
             "required": false
           }
@@ -1080,6 +1368,14 @@
             "item": [
               {
                 "text": "We’d like to know about conditions that may increase your COVID-19 risk. All questions are optional; you can answer as many or as few as you would like. If you do provide this information it may be useful for public health planning.",
+                "_text": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                      "valueBoolean": true
+                    }
+                  ]
+                },
                 "type": "display",
                 "linkId": "/form_info-help",
                 "extension": [
@@ -1111,7 +1407,15 @@
               }
             ],
             "required": false,
-            "text": "Healthcare worker questions"
+            "text": "Healthcare worker questions",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            }
           },
           {
             "linkId": "/are_you_a_healthcare_worker",
@@ -1125,11 +1429,27 @@
             ],
             "required": false,
             "text": "Are you a healthcare worker?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  },
                   "system": "https://loinc.org/"
                 }
               },
@@ -1137,6 +1457,14 @@
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  },
                   "system": "https://loinc.org/"
                 }
               }
@@ -1154,11 +1482,27 @@
             ],
             "required": false,
             "text": "Are you actively seeing patients?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  },
                   "system": "https://loinc.org/"
                 }
               },
@@ -1166,6 +1510,14 @@
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  },
                   "system": "https://loinc.org/"
                 }
               }
@@ -1182,7 +1534,15 @@
               }
             ],
             "required": false,
-            "text": "What is your role?"
+            "text": "What is your role?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            }
           },
           {
             "linkId": "/what_setting_do_you_work_in",
@@ -1195,7 +1555,15 @@
               }
             ],
             "required": false,
-            "text": "What setting do you work in?"
+            "text": "What setting do you work in?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            }
           },
           {
             "linkId": "/form_section_chronic_health_conditions",
@@ -1208,7 +1576,15 @@
               }
             ],
             "required": false,
-            "text": "Chronic health conditions"
+            "text": "Chronic health conditions",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            }
           },
           {
             "linkId": "/do_you_have_any_chronic_health_conditions",
@@ -1222,19 +1598,43 @@
             ],
             "required": false,
             "text": "Do you have any chronic health conditions, such as diabetes, asthma, or high blood pressure?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -1251,19 +1651,43 @@
             ],
             "required": false,
             "text": "Would you like to tell us what chronic health condition(s) you have?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -1279,7 +1703,15 @@
               }
             ],
             "required": false,
-            "text": "What chronic health condition(s) do you have?"
+            "text": "What chronic health condition(s) do you have?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            }
           },
           {
             "linkId": "/form_section_immunocompromised_conditions_questions",
@@ -1292,7 +1724,15 @@
               }
             ],
             "required": false,
-            "text": "Immunocompromised conditions"
+            "text": "Immunocompromised conditions",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            }
           },
           {
             "linkId": "/are_you_at_an_increased_risk_of_getting_an_infection",
@@ -1306,19 +1746,43 @@
             ],
             "required": false,
             "text": "Are you at an increased risk of getting an infection, cold, or fever due to a health condition or medical treatment?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -1335,19 +1799,43 @@
             ],
             "required": false,
             "text": "Would you like to tell us what condition or treatment increases your risk for infection, cold, or fever?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -1363,7 +1851,15 @@
               }
             ],
             "required": false,
-            "text": "What condition or treatment increases your risk for infection, cold, or fever?"
+            "text": "What condition or treatment increases your risk for infection, cold, or fever?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            }
           },
           {
             "linkId": "/form_section_pregnancy_status",
@@ -1376,7 +1872,15 @@
               }
             ],
             "required": false,
-            "text": "Pregnancy status / Recent birth"
+            "text": "Pregnancy status / Recent birth",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            }
           },
           {
             "linkId": "/are_you_currently_pregnant",
@@ -1390,19 +1894,43 @@
             ],
             "required": false,
             "text": "Are you currently pregnant?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -1417,6 +1945,14 @@
               }
             ],
             "text": "When is your due date?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "date",
             "required": false
           },
@@ -1432,19 +1968,43 @@
             ],
             "required": false,
             "text": "Have you recently given birth?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -1459,6 +2019,14 @@
               }
             ],
             "text": "When did you give birth?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "date",
             "required": false
           },
@@ -1474,19 +2042,43 @@
             ],
             "required": false,
             "text": "Have you had any fever, cough, or shortness of breath during your pregnancy or in the first six weeks after giving birth?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -1501,6 +2093,14 @@
               }
             ],
             "text": "When did you have fever, cough, or shortness of breath?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "type": "date",
             "required": false
           },
@@ -1516,19 +2116,43 @@
             ],
             "required": false,
             "text": "Have you ever tested positive for coronavirus (COVID-19) during your pregnancy or in the first six weeks after giving birth?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -1545,19 +2169,43 @@
             ],
             "required": false,
             "text": "Were you ever admitted to the hospital because of having coronavirus (COVID-19) during your pregnancy or in the first six weeks after giving birth?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
             "answerOption": [
               {
                 "valueCoding": {
                   "code": "LA33-6",
                   "display": "Yes",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               },
               {
                 "valueCoding": {
                   "code": "LA32-8",
                   "display": "No",
-                  "system": "https://loinc.org/"
+                  "system": "https://loinc.org/",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -1594,7 +2242,15 @@
         "priority": "routine",
         "payload": [
           {
-            "contentString": "Welcome to StayHome! We're glad you're here.\n- Keep an eye on this space for messages\n- Dismiss them with the “Dismiss” button\n- Find new and old messages in the Menu under Communications"
+            "contentString": "Welcome to StayHome! We're glad you're here.\n- Keep an eye on this space for messages\n- Dismiss them with the “Dismiss” button\n- Find new and old messages in the Menu under Communications",
+            "_contentString": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            }
           }
         ]
       },
