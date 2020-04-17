@@ -2152,6 +2152,61 @@
         "method": "PUT",
         "url": "Communication/57"
       }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1463",
+        "name": "Seattle Coronavirus Assessment Network (SCAN)"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/1463"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1464",
+        "name": "FIU NeighborhoodHELP program"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/1464"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1465",
+        "name": "Florida International University"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/1465"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1466",
+        "name": "Public health agencies"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/1466"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1467",
+        "name": "Researchers"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/1467"
+      }
     }
   ]
 }
