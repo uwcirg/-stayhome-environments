@@ -2207,6 +2207,17 @@
         "method": "PUT",
         "url": "Organization/1467"
       }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1737",
+        "name": "Social Distancing Study"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/1737"
+      }
     }
   ]
 }
