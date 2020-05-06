@@ -496,6 +496,104 @@
             "required": false
           },
           {
+            "linkId": "/additional_symptoms",
+            "code": [
+              {
+                "system": "Custom",
+                "code": "additional_symptoms",
+                "display": "Have you experienced any additional symptoms?"
+              }
+            ],
+            "text": "Have you experienced any additional symptoms?",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                  "valueBoolean": true
+                }
+              ]
+            },
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "chills",
+                  "display": "Chills",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "repeated-shaking-with-chills",
+                  "display": "Repeated shaking with chills",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "muscle-pain",
+                  "display": "Muscle pain",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "headache",
+                  "display": "Headache",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "valueCoding": {
+                  "system": "Custom",
+                  "code": "sore-throat",
+                  "display": "Sore throat",
+                  "_display": {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+                        "valueBoolean": true
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
             "linkId": "/comment",
             "code": [
               {
@@ -2206,6 +2304,17 @@
       "request": {
         "method": "PUT",
         "url": "Organization/1467"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1737",
+        "name": "Social Distancing Study"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/1737"
       }
     }
   ]
