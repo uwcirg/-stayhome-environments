@@ -91,6 +91,32 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
               "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "mn"
+                },
+                {
+                  "url": "content",
+                  "valueString": "\u283f\u283fSymptom Assessment~~"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Symptomaufzeichnung"
+                }
+              ]
             }
           ]
         },
@@ -124,6 +150,32 @@
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fAll questions are optional.~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Alle Fragen sind optional."
+                        }
+                      ]
                     }
                   ]
                 },
@@ -146,6 +198,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fI recently started coughing~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ich habe vor kurzem angefangen zu husten"
+                    }
+                  ]
                 }
               ]
             },
@@ -167,6 +245,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNot at all~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Gar nicht"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -187,6 +291,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fSomewhat~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ein wenig"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -207,6 +337,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fVery much~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Sehr viel"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -229,6 +385,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fI recently have been wheezing or short of breath~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ich habe vor kurzem gekeucht oder hatte Atemnot"
+                    }
+                  ]
                 }
               ]
             },
@@ -250,6 +432,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNot at all~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Gar nicht"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -270,6 +478,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fSomewhat~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ein wenig"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -290,6 +524,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fVery much~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Sehr viel"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -312,6 +572,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fMy sense of smell or taste is~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mein Geruchs- oder Geschmackssinn ist"
+                    }
+                  ]
                 }
               ]
             },
@@ -334,6 +620,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNormal~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Normal"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -355,6 +667,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fDecreased~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Verringert"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -376,6 +714,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fCompletely gone~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "V\u00f6llig abwesend"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -398,6 +762,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fI have felt feverish (had episodes of high body temperature)~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ich habe mich fiebrig gef\u00fchlt (hatte Episoden mit hoher K\u00f6rpertemperatur)"
+                    }
+                  ]
                 }
               ]
             },
@@ -419,6 +809,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNot at all~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Gar nicht"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -439,6 +855,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fSomewhat~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ein wenig"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -459,6 +901,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fVery much~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Sehr viel"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -489,6 +957,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fTemperature if taken by thermometer~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Temperatur (mit Thermometer genommen)"
+                    }
+                  ]
                 }
               ]
             },
@@ -608,6 +1102,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fComments~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Kommentare"
+                    }
+                  ]
                 }
               ]
             },
@@ -636,12 +1156,38 @@
                   }
                 ],
                 "linkId": "/exposure_info-help",
-                "text": "If you have had a possible or known exposure to a person infected with COVID-19, or if you have traveled within the last two weeks, please enter that information in “enter possible exposure or travel”.",
+                "text": "If you have had a possible or known exposure to a person infected with COVID-19, or if you have traveled within the last two weeks, please enter that information in \u201center possible exposure or travel\u201d.",
                 "_text": {
                   "extension": [
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fIf you have had a possible or known exposure to a person infected with COVID-19, or if you have traveled within the last two weeks, please enter that information in \u201center possible exposure or travel\u201d.~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Wenn Sie m\u00f6glicher- oder bekannterweise einer mit COVID-19 infizierten Person ausgesetzt waren oder in den letzten zwei Wochen gereist sind, geben Sie diese Informationen unter \u201eReise oder Aussetzung aufzeichnen\u201c ein."
+                        }
+                      ]
                     }
                   ]
                 },
@@ -699,6 +1245,32 @@
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fAll questions are optional.~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Alle Fragen sind optional."
+                        }
+                      ]
                     }
                   ]
                 },
@@ -721,6 +1293,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fWhen~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Zeitraum"
+                    }
+                  ]
                 }
               ]
             },
@@ -750,6 +1348,32 @@
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fEnter start date and, if relevant, end date. Then, fill in the applicable section(s) below.~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Geben Sie das Startdatum und gegebenenfalls das Enddatum ein. F\u00fcllen Sie dann unten die entsprechenden Abschnitte aus."
+                        }
+                      ]
                     }
                   ]
                 },
@@ -772,6 +1396,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fStart date~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Anfangsdatum"
+                    }
+                  ]
                 }
               ]
             },
@@ -793,6 +1443,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fEnd date (optional)~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Enddatum (optional)"
+                    }
+                  ]
                 }
               ]
             },
@@ -814,6 +1490,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fRecord exposure~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aussetzung aufzeichnen"
+                    }
+                  ]
                 }
               ]
             },
@@ -835,6 +1537,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fWhat happened?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Was ist passiert?"
+                    }
+                  ]
                 }
               ]
             },
@@ -864,6 +1592,32 @@
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fSomeone on the bus sneezed on you, you visited with someone later determined to be ill, etc.~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Jemand im Bus hat Sie angeniest, Sie waren in Kontakt mit jemandem, der sp\u00e4ter krank wurde, usw."
+                        }
+                      ]
                     }
                   ]
                 },
@@ -886,6 +1640,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fHow confident are you that you were exposed?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wie sicher sind Sie, dass Sie ausgesetzt waren?"
+                    }
+                  ]
                 }
               ]
             },
@@ -908,6 +1688,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fPossible~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "M\u00f6glich"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -929,6 +1735,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fLikely~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Wahrscheinlich"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -950,6 +1782,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fCertain~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Sicher"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -972,6 +1830,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fRecord travel~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Reise aufzeichnen"
+                    }
+                  ]
                 }
               ]
             },
@@ -993,6 +1877,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fLocation~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Standort"
+                    }
+                  ]
                 }
               ]
             },
@@ -1022,6 +1932,32 @@
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fWhat location(s) did you visit? Include any details such as city, state, country, zip or postal code, ...~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Welche Orte haben Sie besucht? Geben Sie alle Details wie Stadt, Bundesland, Land, Postleitzahl usw. an."
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1044,6 +1980,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fAny known exposure to individuals with coughing, shortness of breath, or fever when traveling? If yes, describe.~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Waren Sie Personen mit Husten, Atemnot oder Fieber ausgesetzt? Wenn ja, beschreiben Sie."
+                    }
+                  ]
                 }
               ]
             },
@@ -1098,6 +2060,32 @@
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fYou can fill this out each time you are tested, and each time you receive a result. If you are sharing your information, having the result may be important when combined with your symptoms and other information.~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sie k\u00f6nnen diesen Fragebogen jedes Mal ausf\u00fcllen, wenn Sie getestet werden und jedes Mal, wenn Sie ein Ergebnis erhalten. Wenn Sie der Weitergabe Ihrer Informationen zugestimmt haben, kann es wichtig sein, sowie Ihre Symptome und anderen Informationen als auch Ihr Testergebnis aufzuzeichnen."
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1120,6 +2108,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fI was tested:~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ich wurde getestet:"
+                    }
+                  ]
                 }
               ]
             },
@@ -1141,6 +2155,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fWhen~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Zeitraum"
+                    }
+                  ]
                 }
               ]
             },
@@ -1162,6 +2202,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fWhere~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wo"
+                    }
+                  ]
                 }
               ]
             },
@@ -1191,6 +2257,32 @@
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fClinic/site, city/location~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Klinik / Einrichtung, Stadt / Ort"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1213,6 +2305,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fType of test~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Art des Tests"
+                    }
+                  ]
                 }
               ]
             },
@@ -1229,6 +2347,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNasal swab~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nasenabstrich"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1244,6 +2388,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fBlood test~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Bluttest"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1259,6 +2429,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fOther (see comments)~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Andere Antwort (siehe Kommentare)"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1289,6 +2485,32 @@
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fThe nasal swab test is used to show whether you currently are infected with the virus (antigen test) . The blood (antibody) test is used to show if you were previously infected. Neither test is completely accurate, and they measure different things.~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Der Nasenabstrichtest zeigt an, ob Sie derzeit mit dem Virus infiziert sind (Antigentest). Der Bluttest (Antik\u00f6rpertest) zeigt an, ob Sie zuvor infiziert waren. Keiner der Tests ist v\u00f6llig genau und sie messen verschiedene Dinge."
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1311,6 +2533,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fMy result was:~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mein Ergebnis war:"
+                    }
+                  ]
                 }
               ]
             },
@@ -1327,6 +2575,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fPositive~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Positiv"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1342,6 +2616,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNegative~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Negativ"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1357,6 +2657,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fInconclusive~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nicht schl\u00fcssig"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1372,6 +2698,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fPending~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ausstehend"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1402,6 +2754,32 @@
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fAnswer \"positive\" if your test shows that you have, or had, the virus. Answer \"negative\" if your test shows that you do/did not have the virus. You can also indicate if your test was inconclusive (which is uncommon), or if you are still awaiting the test result.~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Antworten Sie mit \"positiv\", wenn Ihr Test zeigt, dass Sie den Virus haben oder hatten. Antworten Sie mit \"negativ\", wenn Ihr Test zeigt, dass Sie den Virus nicht haben / hatten. Sie k\u00f6nnen auch angeben, ob Ihr Test nicht eindeutig war (was ungew\u00f6hnlich ist) oder ob Sie noch auf das Testergebnis warten."
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1424,6 +2802,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fComments~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Kommentare"
+                    }
+                  ]
                 }
               ]
             },
@@ -1465,12 +2869,38 @@
             "required": false,
             "item": [
               {
-                "text": "We’d like to know about conditions that may increase your COVID-19 risk. You can answer as many or as few of the following questions as you would like. If you do provide this information it may be useful for public health planning. This information will not be shared with anyone unless you have chosen to allow us to share your information.",
+                "text": "We\u2019d like to know about conditions that may increase your COVID-19 risk. You can answer as many or as few of the following questions as you would like. If you do provide this information it may be useful for public health planning. This information will not be shared with anyone unless you have chosen to allow us to share your information.",
                 "_text": {
                   "extension": [
                     {
                       "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                       "valueBoolean": true
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "mn"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "\u283f\u283fWe\u2019d like to know about conditions that may increase your COVID-19 risk. You can answer as many or as few of the following questions as you would like. If you do provide this information it may be useful for public health planning. This information will not be shared with anyone unless you have chosen to allow us to share your information.~~"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Wir m\u00f6chten von Bedingungen erfahren, unter welchen sich Ihr COVID-19-Risiko erh\u00f6hen kann. Sie k\u00f6nnen so viele oder so wenige der folgenden Fragen beantworten, wie Sie m\u00f6chten. Wenn Sie diese Informationen angeben, kann dies f\u00fcr die Planung der Gesundheitsbeh\u00f6rden hilfreich sein. Diese Informationen werden nicht an Dritte weitergegeben, es sei denn, Sie haben uns die Weitergabe Ihrer Daten gestattet."
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1511,6 +2941,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fPregnancy status / Recent birth~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Schwangerschaftsstatus / Entbindung"
+                    }
+                  ]
                 }
               ]
             }
@@ -1532,6 +2988,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fAre you currently pregnant?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sind Sie zurzeit Schwanger?"
+                    }
+                  ]
                 }
               ]
             },
@@ -1546,6 +3028,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fYes~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ja"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1561,6 +3069,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNo~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nein"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1583,6 +3117,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fWhen is your due date?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wann ist Ihr Entbindungstermin?"
+                    }
+                  ]
                 }
               ]
             },
@@ -1606,6 +3166,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fHave you recently given birth?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Haben Sie k\u00fcrzlich entbunden?"
+                    }
+                  ]
                 }
               ]
             },
@@ -1620,6 +3206,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fYes~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ja"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1635,6 +3247,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNo~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nein"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1657,6 +3295,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fWhen did you give birth?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wann haben Sie entbunden?"
+                    }
+                  ]
                 }
               ]
             },
@@ -1680,6 +3344,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fHave you had any fever, cough, or shortness of breath during your pregnancy or in the first six weeks after giving birth?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Hatten Sie w\u00e4hrend Ihrer Schwangerschaft oder in den ersten sechs Wochen nach der Entbindung Fieber, Husten oder Atemnot?"
+                    }
+                  ]
                 }
               ]
             },
@@ -1694,6 +3384,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fYes~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ja"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1709,6 +3425,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNo~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nein"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1731,6 +3473,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fWhen did you have fever, cough, or shortness of breath?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wann hatten Sie Fieber, Husten oder Atemnot?"
+                    }
+                  ]
                 }
               ]
             },
@@ -1754,6 +3522,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fDid you ever test positive for coronavirus (COVID-19) during your pregnancy or in the first six weeks after giving birth?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Haben Sie w\u00e4hrend Ihrer Schwangerschaft oder in den ersten sechs Wochen nach der Entbindung jemals positiv auf Coronavirus (COVID-19) getestet?"
+                    }
+                  ]
                 }
               ]
             },
@@ -1768,6 +3562,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fYes~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ja"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1783,6 +3603,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNo~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nein"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1807,6 +3653,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fWere you ever admitted to the hospital because of having coronavirus (COVID-19) during your pregnancy or in the first six weeks after giving birth?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wurden Sie jemals wegen des Coronavirus (COVID-19) w\u00e4hrend Ihrer Schwangerschaft oder in den ersten sechs Wochen nach der Entbindung ins Krankenhaus eingeliefert?"
+                    }
+                  ]
                 }
               ]
             },
@@ -1821,6 +3693,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fYes~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ja"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1836,6 +3734,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNo~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nein"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1860,6 +3784,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fHealthcare worker questions~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Fragen zum Arbeitsstatus im Gesundheitswesen"
+                    }
+                  ]
                 }
               ]
             }
@@ -1881,6 +3831,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fAre you a healthcare worker?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sind Sie ein Angestellter im Gesundheitswesen?"
+                    }
+                  ]
                 }
               ]
             },
@@ -1894,6 +3870,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fYes~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ja"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -1909,6 +3911,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNo~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nein"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -1934,6 +3962,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fAre you actively seeing patients?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Haben Sie derzeit unmittelbaren Umgang mit Patienten?"
+                    }
+                  ]
                 }
               ]
             },
@@ -1947,6 +4001,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fYes~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ja"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -1962,6 +4042,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNo~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nein"
+                          }
+                        ]
                       }
                     ]
                   },
@@ -1987,6 +4093,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fWhat is your role?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Was ist Ihre Rolle?"
+                    }
+                  ]
                 }
               ]
             }
@@ -2008,6 +4140,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fIn what setting do you work?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "In welcher Umgebung arbeiten Sie?"
+                    }
+                  ]
                 }
               ]
             }
@@ -2029,6 +4187,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fChronic health conditions~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Chronische Gesundheitszust\u00e4nde"
+                    }
+                  ]
                 }
               ]
             }
@@ -2050,6 +4234,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fDo you have any chronic health conditions, such as diabetes, asthma, or high blood pressure?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Haben Sie chronische Erkrankungen wie Diabetes, Asthma oder Bluthochdruck?"
+                    }
+                  ]
                 }
               ]
             },
@@ -2064,6 +4274,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fYes~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ja"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -2079,6 +4315,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNo~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nein"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -2103,6 +4365,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fIf you want to, you can add information about your chronic condition(s) here:~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenn Sie m\u00f6chten, k\u00f6nnen Sie hier Informationen zu Ihren chronischen Erkrankungen hinzuf\u00fcgen:"
+                    }
+                  ]
                 }
               ]
             }
@@ -2124,6 +4412,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fImmunocompromised conditions~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Immunschw\u00e4chende Zust\u00e4nde"
+                    }
+                  ]
                 }
               ]
             }
@@ -2145,6 +4459,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fAre you at an increased risk of getting an infection, cold, or fever due to a health condition or medical treatment?~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Haben Sie ein erh\u00f6htes Risiko auf Infektion, Erk\u00e4ltung oder Fieber aufgrund eines Gesundheitszustands oder einer medizinischen Behandlung?"
+                    }
+                  ]
                 }
               ]
             },
@@ -2159,6 +4499,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fYes~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Ja"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -2174,6 +4540,32 @@
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                         "valueBoolean": true
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "mn"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "\u283f\u283fNo~~"
+                          }
+                        ]
+                      },
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Nein"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -2198,6 +4590,32 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
                   "valueBoolean": true
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "mn"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "\u283f\u283fIf you want to, you can add information about your health condition or medical treatment here:~~"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenn Sie m\u00f6chten, k\u00f6nnen Sie hier Informationen \u00fcber Ihren Gesundheitszustand oder Ihre medizinische Behandlung hinzuf\u00fcgen:"
+                    }
+                  ]
                 }
               ]
             }
@@ -2234,7 +4652,7 @@
         "priority": "routine",
         "payload": [
           {
-            "contentString": "Welcome to StayHome! We're glad you're here.\n- Keep an eye on this space for messages\n- Dismiss them with the “Dismiss” button\n- Find new and old messages in the Menu under Communications",
+            "contentString": "Welcome to StayHome! We're glad you're here.\n- Keep an eye on this space for messages\n- Dismiss them with the \u201cDismiss\u201d button\n- Find new and old messages in the Menu under Communications",
             "_contentString": {
               "extension": [
                 {
@@ -2319,3 +4737,4 @@
     }
   ]
 }
+
