@@ -1028,21 +1028,6 @@
               {
                 "valueCoding": {
                   "system": "Custom",
-                  "code": "repeated-shaking-with-chills",
-                  "display": "Repeated shaking with chills",
-                  "_display": {
-                    "extension": [
-                      {
-                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-                        "valueBoolean": true
-                      }
-                    ]
-                  }
-                }
-              },
-              {
-                "valueCoding": {
-                  "system": "Custom",
                   "code": "muscle-pain",
                   "display": "Muscle pain",
                   "_display": {
