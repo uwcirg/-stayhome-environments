@@ -3231,6 +3231,66 @@
         "resourceType": "Questionnaire",
         "id": "1376",
         "title": "COVID-19 testing",
+        "_title": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "mn"
+                },
+                {
+                  "url": "content",
+                  "valueString": "\u283f\u283fCOVID-19 testing~~"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "content",
+                  "valueString": "COVID-19-Test"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "es"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Prueba COVID-19"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "content",
+                  "valueString": "COVID-19 tès"
+                }
+              ]
+            }
+          ]
+        },
         "status": "active",
         "item": [
           {
@@ -4494,6 +4554,66 @@
       "resource": {
         "status": "active",
         "title": "Pregnancy, Occupation, & Possible Risks",
+        "_title": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "mn"
+                },
+                {
+                  "url": "content",
+                  "valueString": "\u283f\u283fPregnancy, Occupation, & Possible Risks~~"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Schwangerschaft, Beruf und mögliche Risiken"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "es"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Embarazo, ocupación y posibles riesgos"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Gwosès, Okipasyon, ak risk posib"
+                }
+              ]
+            }
+          ]
+        },
         "resourceType": "Questionnaire",
         "meta": {
           "profile": [
