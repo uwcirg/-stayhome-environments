@@ -2006,6 +2006,66 @@
           ]
         },
         "title": "Enter travel or possible exposure",
+        "_title": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "mn"
+                },
+                {
+                  "url": "content",
+                  "valueString": "\u283f\u283fEnter travel or possible exposure~~"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Reise oder mögliche Aussetzung aufzeichnen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "es"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ingrese el viaje o la posible exposición"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "fr"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Mete ekspozisyon an oubyen vwayaj la"
+                }
+              ]
+            }
+          ]
+        },
         "status": "active",
         "item": [
           {
