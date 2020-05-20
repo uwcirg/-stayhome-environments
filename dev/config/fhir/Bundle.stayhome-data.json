@@ -1555,6 +1555,7 @@
             },
             "type": "choice",
             "required": false,
+            "repeats": true,
             "answerOption": [
               {
                 "valueCoding": {
